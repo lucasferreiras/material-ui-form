@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { UserContext } from "./../../Context/UserContext";
 import { useHistory } from "react-router-dom";
 import "./Perfil.css";
@@ -43,8 +43,14 @@ function Perfil() {
 
   const contexto = useContext(UserContext);
 
+  useEffect(() => {
+    if (!contexto.user) {
+      history.push("/");
+    }
+  }, [history, contexto.user]);
+
   if (!contexto.user) {
-    return <div className="perfil">{history.push("/")}</div>;
+    return null;
   }
 
   return (
