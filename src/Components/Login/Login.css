@@ -1,0 +1,11 @@
+.form-container {
+  margin-top: 17vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-form {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto !important;
+}

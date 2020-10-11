@@ -1,0 +1,12 @@
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.accordion {
+  margin: 0 215px;
+}
+.btn-perfil {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
